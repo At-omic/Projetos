@@ -1,5 +1,5 @@
 from GameStation_clientes import Cliente
-from GameStation_clientes import crianca
+from GameStation_clientes import Crianca
 
 
 #Aqui sera o cadastro de usuarios: ----  Dá para conectar com o Banco de Dados Local que criei com matrizes.
