@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <script type="text/JavaScript" src="js.js">
+
+
+    </script>
+    <title>Jogo da Velha</title>
+
+</head>
+<body>
+    <header></header>
+
+    <center> 
+<nav id="jogo">
+   
+        
+        <div id="placar"> <div ></div></div><h2 id="xo">   X   | Vs |    O  </h2></div>
+            
+        
+       
+            
+            
+            
+        
+        <div >
+
+            <table class="moldura">
+                <tr>
+                    <th id="1q" ></th><th id="2q"></th></th><th id="3q"></th>
+                </tr>
+                <tr>
+                    <th id="4q"></th><th id="5q"></th><th id="6q"></th>
+                </tr>
+                <tr>
+                    <th id="7q"></th><th id="8q"></th><th id="9q"></th>
+                </tr>
+                
+            </table>
+ <br>
+            <table id="controlador">
+                <tr>
+                    <th><input type="button" value=" " onclick="marcar('1q')" ></th><th><input type="button" value=" " onclick="marcar('2q')" ></th><th><input type="button" value=" " onclick="marcar('3q')" id="3q"></th>
+                </tr>
+                <tr>
+                    <th><input type="button" value=" " onclick="marcar('4q')" id="4q"></th><th><input type="button" value=" " onclick="marcar('5q')" id="5q"></th><th><input type="button" value=" " onclick="marcar('6q')" id="6q"></th>
+                </tr>
+                <tr>
+                    <th><input type="button" value=" " onclick="marcar('7q')" id="7q"></th><th><input type="button" value=" " onclick="marcar('8q')" id="8q"></th><th><input type="button" value=" " onclick="marcar('9q')" id="9q"></th>
+                </tr>
+                
+            </table><hr>
+            <input type="button" value="Limpar Campos" onclick="limpar()" />
+    </div>
+</nav>
+
+</body>
+</html>
