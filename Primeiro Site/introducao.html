@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html  >
+    <head>
+        <meta charset="UTF-8"/> 
+        <title>Práticas de Programação</title>
+        <link rel="stylesheet" href="style.css" />
+        <script type="text/JavaScript" src="JavaScript.js" ></script>
+       
+
+    </head>
+    <body>
+        <header>
+           cabeçalho
+           <hr>
+            
+        </header>
+
+    <form>
+        <div id="calc">
+            <p style="text-align: center"> Mini Calculadora Alpha</p>
+           <p>Num 1: <input type="text" id="n1" placeholder="--"/></p>
+            <p>Num 2: <input type="text" id="n2" placeholder="--"/></p>
+                 <nav id="lista">
+                <ul>
+                    <li><input class=" button" type="button" value="Somar" onclick="calcular('+') " /></li>
+                    <li><input class=" button"  type="button" value="Dividir" onclick="calcular('/')" > </li>
+                    <li><input class=" button"  type="button" value="Subtrair" onclick="calcular('-')" ></li>
+                    <li><input class=" button"  type="button" value="Multiplicar" onclick="calcular('*')" ></li>
+                </ul>
+                <nav id="resultado">
+                    <h3 id="result"></h3>
+                </nav>
+            </nav>
+            </div>
+            
+            
+    </form>
+
+    <form>
+        <div id="media">
+            <p style="text-align: center"> Mini Média Alpha</p>
+            <p>Nome : <input type="text" id="nome" placeholder="Aluno"/></p>
+           <p>Nota 1: <input type="text" id="m1" placeholder=" Nota"/></p>
+           <p>Nota 2: <input type="text" id="m2" placeholder=" Nota"/></p>
+           <p>Nota 3: <input type="text" id="m3" placeholder=" Nota"/></p>
+           
+                    <input id="enviar" type="reset" value="Calcular" onclick="media()"/>
+                    
+               
+                <nav id="resultado">
+                    <br>
+                    <h3 id="Mediaresult"></h3>
+                    <h3 id="Mediaresult2"></h3>
+                </nav>
+            </div>
+            
+        </nav>
+    </form>
+
+    
+
+    <main>
+
+        
+
+
+
+        
+        <br>
+        <h1 style="text-align: center;"> Práticas de Programação</h1>
+        
+         <img src="img/HTML.png" alt="LOGO DO HTML5" width="50px"   / >
+                <nav id="menu">
+                    <ul>
+                        <li>
+                            <a href="https://www.w3schools.com/tags/default.asp" target="_blank">TAGS HTML</a> 
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/cssref/index.php" target="_blank">TAGS CSS</a> 
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/jsref/default.asp" target="_blank">TAGS JavaScript</a> 
+                        </li>
+                        
+                        
+                    </ul>
+                </nav>
+        
+        <hr>
+        
+            <p>
+            Clique
+                <a href="http://google.com" target="_blank">
+                 AQUI 
+                </a>
+            para acessar o Google
+            </p>
+            <nav>
+                <p class="textocomum"> Para usar as classes é necessario adicionoar no Style um ponto mais o nome da classe. .textocomum por exemplo</p>
+                <p id="textoespecifico">Para usar um id, único para cada tag no style usa-se #nome do id<br>#textoespecifico por exemplo</p> 
+            </nav>
+        <hr>
+    
+        <ul>
+            <li>HTML</li>
+            <li>css</li>
+            <li>lógica de Programação</li>
+            <li>JavaScript</li>
+            
+        </ul>
+        <nav>
+            <h3 id="contador"></h3>
+        </nav>
+        </main>
+    <footer>
+        <hr>
+        <p>Rodapé</p>
+
+
+        <div id="CadCliente">
+        <nav>
+
+            <h2> Mini Cadastro Cliente</h2><hr>
+            <center>
+                <input class="button" type="button" value="Cadastrar" onclick="cadastrar()" />
+                <input class="button" type="button" value="Remover Último" onclick="remover()" />
+            
+            </center>
+            <p  id="pf"></p>
+            <ul>
+                <li class="lis"><p  id="cliente"></p></li>
+            </ul>
+
+        </nav>
+    </div>
+
+
+    </footer>
+    </body>
+</html>
+

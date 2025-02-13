@@ -1,0 +1,102 @@
+
+#CadCliente{
+    position: relative;
+    float: inline-start;
+    border: solid 1px black;
+    background-color: beige;
+    margin: 5px;
+    padding: 5px;
+   
+}
+.lis{
+    display: inline;
+}
+#Mediaresult{
+    background-color: green;
+    color: white;
+}
+#Mediaresult2{
+    background-color: red;
+    color: white;
+}
+#enviar{
+    position: relative;
+    background-color: white;
+
+}
+#media{
+    background-color: beige;
+    position: relative;
+    float: inline-end;
+    border: solid 1px black;
+    margin: 10px;
+    padding: 10px;
+
+}
+#resultado h3{
+    border: solid 0.5px black;
+    margin: 1px;
+    padding: auto;
+    text-align: center;
+}
+.button{
+    background-color: rgba(255, 255, 255, 0);
+    margin: 5px;
+    border: 1px;
+}
+#calc{
+    background-color: beige;
+    position:absolute;
+    margin: 1px;
+    border: solid 1px black;
+    padding: 10px;
+    
+}
+
+main{
+    margin: auto 30%;
+    border: 1px solid black;
+    padding: 10px;
+    float: center;
+    
+}
+
+
+.textocomum{
+    background-color: red;
+    padding: 10px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+#textoespecifico{
+    background-color: rgb(228, 150, 150);
+    color: whitesmoke;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Segoe UI' , Tahoma, Geneva, Verdana, sans-serif;
+    
+
+}
+main nav li{
+    display: inline;
+    border: 0px solid black;
+    margin-left: 5px;
+    background-color: white;
+    
+}
+#menu {
+    padding: 1px;
+    float: right;
+   
+  
+}
+nav a {
+    margin: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    
+
+}

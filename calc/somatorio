@@ -1,0 +1,16 @@
+
+def somatorio( a, funcao , b):
+    valor = 0
+    for i in range(a):
+        valor = funcao(b + i) + valor
+        #print(valor )  
+    return valor
+
+def f(x):
+    return x + 1;
+def g(x):
+    return f(x) + 2
+
+
+print("f(a):", somatorio(4,f,1))    
+print("f(a):", somatorio(4,g,2))    
