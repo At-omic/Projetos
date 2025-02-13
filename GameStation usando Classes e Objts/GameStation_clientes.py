@@ -61,7 +61,7 @@ class Cliente:
 
 #vou usar a parte de herança para criar clientes crianças, que nao terao acesso a todos os brinquedo e limite de credito ( 1 - ate 10 2 - ate 20 3 - ate 30 )
 
-class crianca(Cliente):
+class Crianca(Cliente):
     def __init__(self,nome,idade,codliente,saldo,seguranca):
      super().__init__(nome,idade,codliente,saldo)
      self.seguranca = seguranca
