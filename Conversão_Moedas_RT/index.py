@@ -19,6 +19,23 @@ def conversor(valor, moeda_origem, moeda_destino):
     print(f"Valor Convertido: {montante:.2f}")
     return montante
 
+def grafico(variavel_y_grafico,variavel_yticks_grafico,cor_traco):
+    a = [1, 2]
+    b = variavel_y_grafico
+    x = [1, 2]
+    y = [valor, mont]
+    fig, ax = plt.subplots()
+    plt.xticks([1, 2])
+    plt.yticks(variavel_yticks_grafico)
+    ax.bar(a, b, width=0.2, zorder=1, color="grey", label=f"{b[0]} U de Moedas")
+    ax.scatter(x, y, zorder=2, label=f"{valor} {nome_moeda_local} -> {mont:.2f} {nome_moeda_destino}", color=f"{cor_traco}", ls=':')
+    plt.plot(x,y, zorder=3, color=f"{cor_traco}")
+    plt.xlabel(f"{valor}{nome_moeda_local} -> {mont:.2f}{nome_moeda_destino}")
+    plt.grid(color='grey', linestyle='-', linewidth=0.1, zorder=0)
+    plt.title("Relação")
+    plt.legend()
+    plt.show()
+
 while True:
     try:
         print("-" * 25)
@@ -33,35 +50,21 @@ while True:
         print(f"Sigla '{moeda_origem}' ou '{moeda_destino}' Nao Encontrada!")
         continue
     else:
-        mont = conversor(valor, moeda_origem.upper().strip(), moeda_destino.upper().strip())
-        print("-" * 25)
-        op = input("Exibir Figura(S/N)?")
-        if op.lower() == 's': break
-        else: continue
+            mont = conversor(valor, moeda_origem.upper().strip(), moeda_destino.upper().strip())
+            nome_moeda_local = moeda_origem.upper()
+            nome_moeda_destino = moeda_destino.upper()
+            print("-" * 25)
+            if valor > mont:
+                cor_traco = "red"
+            else:
+                cor_traco = "green"
 
-
-
-
-cotacao = obter_cotacoes()
-valor_normalizado = (100 / valor) * valor
-montante_normalizado = (100 / valor) * mont
-
-categorias = [moeda_destino,moeda_origem]
-valores1 = [valor_normalizado, 100]  # Valor original em relação a 100
-valores2 = [montante_normalizado, 100]  # Valor convertido em relação a 100
-
-largura = 0.2  # Define largura para melhor visualização
-
-# Criando gráfico de barras lado a lado
-fig, ax = plt.subplots()
-ax.bar(categorias, valores1, width=largura, color='blue', label="Valor Original", zorder=2)
-ax.bar(categorias, valores2, width=largura, color='grey', label="Valor Convertido", zorder=3)
-plt.ylabel('Valores ')
-plt.title("Comparação de Valores ")
-plt.legend()
-plt.grid(axis='y', linestyle='--', alpha=0.7, zorder=1)  # Adicionando grade
-
-plt.show()
-
-
+            if valor > 100 or mont > 100:
+                variavel_y_grafico = [1000,1000]
+                variavel_yticks_grafico = [0,1000,valor,mont]
+                grafico(variavel_y_grafico,variavel_yticks_grafico,cor_traco)
+            else:
+                variavel_y_grafico = [100,100]
+                variavel_yticks_grafico = [0, 100,valor,mont]
+                grafico(variavel_y_grafico,variavel_yticks_grafico,cor_traco)
 
